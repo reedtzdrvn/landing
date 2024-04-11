@@ -1,9 +1,11 @@
+import Header from './components/header'
+
 const App = () => {
-  return (
-    <div className="flex justify-center text-3xl font-bold underline">
-      landing page
-    </div>
-  )
+	return (
+		<div>
+			<Header />
+		</div>
+	)
 }
 
-export default App;
+export default App
