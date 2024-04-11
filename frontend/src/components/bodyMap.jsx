@@ -6,7 +6,7 @@ const BodyMap = () => {
 				id='map'
 				className='bodyMap flex justify-center px-[128px] gap-[16px]  pt-20'
 			>
-				<div className='container flex justify-between w-full idiot'>
+				<div className='container flex justify-between items-center w-full idiot'>
 					<div className='Map flex flex-col items-center w-[45%]'>
 						<div className='title_map uppercase py-[18px] px-[84px] bg-[#465373] font-bold text-[#E4E9EF] flex justify-center items-center mb-[50px]'>
 							Карта москвы
