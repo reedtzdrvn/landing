@@ -1,12 +1,21 @@
+import DiagInfo from './diagInfo'
+import diag from '../img/diag.png'
+
 const Diagram = () => {
 	return (
 		<>
 			<div className='Diagram'>
-				<img src='../img/Diag.svg' />
-				<div>Lorem Ipsum - это текст-"рыба".</div>
+				<div className='flex flex-col items-center'>
+					<img src={diag} className='mb-20' />
+					<div className='mb-4 text-3xl text-[#040B25] font-semibold'>
+						Lorem Ipsum - <br />
+						это текст-"рыба".
+					</div>
+				</div>
 				<div className='Diag_info'>
-					<div>20%</div>
-					<div>-Lorem ipsum</div>
+					<DiagInfo />
+					<DiagInfo />
+					<DiagInfo />
 				</div>
 			</div>
 		</>
