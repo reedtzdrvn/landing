@@ -5,8 +5,13 @@ const Diagram = () => {
 	return (
 		<>
 			<div className='Diagram'>
-				<img src={diag} className='mb-20' />
-				<div>Lorem Ipsum - это текст-"рыба".</div>
+				<div className='flex flex-col items-center'>
+					<img src={diag} className='mb-20' />
+					<div className='mb-4 text-3xl text-[#040B25] font-semibold'>
+						Lorem Ipsum - <br />
+						это текст-"рыба".
+					</div>
+				</div>
 				<div className='Diag_info'>
 					<DiagInfo />
 					<DiagInfo />
