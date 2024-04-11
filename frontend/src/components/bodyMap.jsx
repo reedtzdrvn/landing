@@ -19,7 +19,7 @@ const BodyMap = () => {
 						<div className='titleInfo text-[#1C2D4A] text-4xl mb-[50px] font-bold'>
 							Административные округа Москвы
 						</div>
-						<div className='textInfo text-[#040B25] text-2xl text-justify	'>
+						<div className='textInfo text-[#040B25] text-2xl	'>
 							ЦАО - Центральный административный округ <br />
 							ВАО - Восточный административный округ <br />
 							ЮВАО - Юго-Восточный административный округ <br />
