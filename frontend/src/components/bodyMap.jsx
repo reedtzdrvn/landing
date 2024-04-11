@@ -2,7 +2,7 @@ import Map from './map'
 const BodyMap = () => {
 	return (
 		<>
-			<div className='bodyMap flex justify-center'>
+			<div className='bodyMap flex justify-center mb-[250px]'>
 				<div className='container flex gap-20 max-w-[1400px]'>
 					<div className='Map flex flex-col items-center'>
 						<div className='title_map uppercase h-[65px] w-[400px] bg-[#465373] font-bold text-[#E4E9EF] flex justify-center items-center mb-[50px]'>

@@ -1,12 +1,16 @@
+import DiagInfo from './diagInfo'
+import diag from '../img/diag.png'
+
 const Diagram = () => {
 	return (
 		<>
 			<div className='Diagram'>
-				<img src='../img/Diag.svg' />
+				<img src={diag} className='mb-20' />
 				<div>Lorem Ipsum - это текст-"рыба".</div>
 				<div className='Diag_info'>
-					<div>20%</div>
-					<div>-Lorem ipsum</div>
+					<DiagInfo />
+					<DiagInfo />
+					<DiagInfo />
 				</div>
 			</div>
 		</>
