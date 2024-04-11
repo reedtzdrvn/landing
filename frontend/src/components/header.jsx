@@ -3,7 +3,7 @@ import './header.css'
 const Header = () => {
 	return (
 		<>
-			<div className='Header'>
+			<div className='Header mb-40'>
 				<div className='NavBar flex justify-center h-[65px] bg-[#465373]'>
 					<div className='container max-w-[1400px] text-[#E4E9EF] flex justify-start gap-10'>
 						<button className=''>Карта</button>
