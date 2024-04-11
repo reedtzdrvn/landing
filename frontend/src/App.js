@@ -3,7 +3,7 @@ import BodyMap from './components/bodyMap'
 
 const App = () => {
 	return (
-		<div>
+		<div className='bg-[#DBDCDC]'>
 			<Header />
 			<BodyMap />
 		</div>
