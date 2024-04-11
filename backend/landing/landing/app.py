@@ -28,7 +28,7 @@ def wake_server():
 
 def train_model():
     global random_forest_model, feature_names
-    housing_df = pd.read_csv("./lol/data2.csv", sep=';')
+    housing_df = pd.read_csv("data2.csv", sep=';')
     for col in housing_df.columns:
         if housing_df[col].dtype == 'object':
             housing_df[col] = housing_df[col].str.replace(',', '.').astype(float)
