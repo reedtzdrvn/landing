@@ -7,7 +7,7 @@ from flask_cors import CORS
 import requests
 import time
 
-app = Flask(__name__, static_url_path='./lol/')
+app = Flask(__name__)
 CORS(app) 
 random_forest_model = None
 feature_names = None
@@ -28,7 +28,7 @@ def wake_server():
 
 def train_model():
     global random_forest_model, feature_names
-    housing_df = pd.read_csv("data2.csv", sep=';')
+    housing_df = pd.read_csv("./lol/data2.csv", sep=';')
     for col in housing_df.columns:
         if housing_df[col].dtype == 'object':
             housing_df[col] = housing_df[col].str.replace(',', '.').astype(float)
