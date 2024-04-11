@@ -4,11 +4,27 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from scipy import stats
 from flask_cors import CORS
+import requests
+import time
 
 app = Flask(__name__)
 CORS(app) 
 random_forest_model = None
 feature_names = None
+
+def send_request_to_server():
+    url = 'https://tg-wtf.onrender.com'
+    try:
+        response = requests.get(url)
+        print(f"Status code: {response.status_code}")
+    except Exception as e:
+        print(f"Error sending request: {e}")
+
+def wake_server():
+    interval_seconds = 300
+    while True:
+        send_request_to_server()
+        time.sleep(interval_seconds)
 
 def train_model():
     global random_forest_model, feature_names
@@ -44,4 +60,5 @@ def get_price():
 
 if __name__ == '__main__':
     train_model()
+    wake_server()
     app.run(debug=True)
