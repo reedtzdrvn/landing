@@ -2,5 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 * {
-	font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }

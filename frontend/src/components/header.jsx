@@ -3,12 +3,11 @@ import './header.css'
 const Header = () => {
 	return (
 		<>
-			<div className='Header mb-40'>
+			<div className='Header'>
 				<div className='NavBar flex  h-[65px] bg-[#465373]'>
-					<div className='container text-[#E4E9EF] flex justify-start gap-10 px-[64px]'>
-						<button className=''>Карта</button>
-						<button className=''>Диаграммы</button>
-						<button className=''>Форма</button>
+					<div className='container text-[#E4E9EF] items-center flex justify-start gap-10 px-[64px]'>
+						<a className='cursor-pointer' href='#map'>Карта</a>
+						<a className='cursor-pointer' href='#form'>Форма</a>
 					</div>
 				</div>
 				<div className='Header_body flex justify-center items-center px-[128px]'>

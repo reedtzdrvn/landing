@@ -61,7 +61,8 @@ const PriceForm = () => {
 	}
 
 	return (
-		<div className='mt-40 max-w-4xl mx-auto p-[40px]v  bg-[#1C2D4A] '>
+		<div id='form' className='pt-24'>
+            <div className='max-w-4xl mx-auto p-[40px]v  bg-[#1C2D4A] '>
 			<form
 				onSubmit={handleFormSubmit}
 				className=' shadow-md rounded px-8 pt-6 pb-8 mb-4'
@@ -190,6 +191,7 @@ const PriceForm = () => {
 				</div>
 			</form>
 		</div>
+        </div>
 	)
 }
 
