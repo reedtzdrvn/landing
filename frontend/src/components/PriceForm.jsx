@@ -177,14 +177,16 @@ const PriceForm = () => {
 						))}
 					</select>
 				</div>
-				<div className='flex items-center justify-between'>
+				<div className='flex items-center justify-between mt-8'>
 					<button
 						type='submit'
-						className='bg-[#465373] hover:bg-[#5c75b5] text-[#ADADAD] font-bold py-2 mt-6 px-4 rounded focus:outline-none focus:shadow-outline'
+						className='bg-[#465373] hover:bg-[#5c75b5] text-[#ADADAD] font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline'
 					>
 						Отправить
 					</button>
-					{predictPrice}
+					<div className='text-[#ADADAD] text-[24px] border-2 border-[#ADADAD] rounded-md px-3'>
+                    {predictPrice}
+                    </div>
 				</div>
 			</form>
 		</div>
