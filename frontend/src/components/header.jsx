@@ -20,7 +20,7 @@ const Header = () => {
 							Lorem Ipsum - это текст-"рыба", часто используемый в печати и
 							вэб-дизайне.
 						</div>
-						<div className='flex justify-between items-end'>
+						<div className='lol flex justify-between items-end'>
 							<div className='w-[50%]'>
 								Lorem Ipsum - это текст-"рыба", часто используемый в печати и
 								вэб-дизайне. Lorem Ipsum - это текст-"рыба", часто используемый
@@ -28,7 +28,6 @@ const Header = () => {
 								используемый в печати и вэб-дизайне. Lorem Ipsum - это
 								текст-"рыба", часто используемый в печати и вэб-дизайне.{' '}
 							</div>
-							<div></div>
 						</div>
 					</div>
 				</div>

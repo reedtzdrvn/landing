@@ -7,3 +7,81 @@
 	padding-bottom: 48px;
 }
 
+@media screen and (max-width: 600px) {
+	.NavBar div{
+		display: flex;
+		justify-content: space-between;
+	}
+	.Header_body{
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+	.lol{
+		flex-direction: column !important;
+	}
+	.lol div{
+		width: 100% !important;
+	}
+	.Header_body{
+		margin: 0;
+		min-height: auto !important;
+	}
+	.kek{
+		margin-top: 36px;
+	}
+	.kekbutton{
+		display: flex;
+		justify-content: flex-end;
+	}
+	.idiot{
+		flex-direction: column;
+	}
+	.bodyMap{
+		padding: 0;
+	}
+	.idiot div{
+		width: 100% !important;
+	}
+	.Header{
+		margin-bottom: 0;
+	}
+	.lolkek{
+		margin-left: 16px;
+		padding-right: 16px;
+	}
+	.MapInfo{
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+	.titleInfo{
+		margin-bottom: 16px;
+		text-align: center;
+		margin-top: 32px;
+	}
+	.idiot2{
+		margin-top: 32px;
+
+	}
+	.titleformprice{
+		color: white;
+		padding-left: 32px;
+		padding-right: 32px;
+		padding-top: 24px;
+		font-size: 24px;
+		text-align: center;
+		color:#ADADAD;
+	}
+	.footer{
+		margin-top: 0;
+	}
+	.lolkek2{
+		display: block;
+		padding-left: 24px;
+		padding-right: 24px;
+		text-align: center;
+		padding-bottom: 24px;
+	}
+	.lolkek3{
+		padding-top: 0;
+	}
+}
