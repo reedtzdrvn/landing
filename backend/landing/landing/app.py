@@ -3,8 +3,10 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from scipy import stats
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app) 
 random_forest_model = None
 feature_names = None
 

@@ -1,15 +1,17 @@
 import React, { useState } from "react";
+import axios from "../axios.js"
 
 const PriceForm = () => {
-  const [minutesFromMetro, setMinutesFromMetro] = useState("");
-  const [numberOfRooms, setNumberOfRooms] = useState("");
-  const [apartmentArea, setApartmentArea] = useState("");
-  const [bedroomArea, setBedroomArea] = useState("");
-  const [kitchenArea, setKitchenArea] = useState("");
-  const [floorNumber, setFloorNumber] = useState("");
-  const [totalFloors, setTotalFloors] = useState("");
+  const [minutesFromMetro, setMinutesFromMetro] = useState(null);
+  const [numberOfRooms, setNumberOfRooms] = useState(null);
+  const [apartmentArea, setApartmentArea] = useState(null);
+  const [bedroomArea, setBedroomArea] = useState(null);
+  const [kitchenArea, setKitchenArea] = useState(null);
+  const [floorNumber, setFloorNumber] = useState(null);
+  const [totalFloors, setTotalFloors] = useState(null);
   const [district, setDistrict] = useState(0);
   const [renovation, setRenovation] = useState(0)
+  const [predictPrice, setPredictPrice] = useState(null)
 
   const districtOptions = [
     "Восточный административный округ",
@@ -33,10 +35,16 @@ const PriceForm = () => {
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
-    let res = [minutesFromMetro, numberOfRooms, apartmentArea, bedroomArea, kitchenArea, floorNumber, totalFloors]
+    let res = [parseInt(minutesFromMetro), parseInt(numberOfRooms), parseInt(apartmentArea), parseInt(bedroomArea), parseInt(kitchenArea), parseInt(floorNumber), parseInt(totalFloors)]
     res.push(...districtOptions.map((option, index) => (index == district ? 1 : 0)))
     res.push(...renovationOptions.map((option, index) => (index == renovation ? 1 : 0)))
-    console.log(res)
+    axios.post(`/predict`, { "params": res})
+    .then((response) => {
+      setPredictPrice(response.data.price)
+    })
+    .catch((error) => {
+      console.error("Ошибка при подсчете цены", error);
+    });
   };
 
   return (
@@ -163,6 +171,7 @@ const PriceForm = () => {
           >
             Отправить
           </button>
+          {predictPrice}
         </div>
       </form>
     </div>
