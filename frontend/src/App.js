@@ -1,6 +1,8 @@
 import Header from './components/header'
 import BodyMap from './components/bodyMap'
 import Diagrams from './components/diagrams'
+import PriceForm from './components/PriceForm'
+
 
 const App = () => {
 	return (
@@ -8,6 +10,7 @@ const App = () => {
 			<Header />
 			<BodyMap />
 			<Diagrams />
+			<PriceForm />
 		</div>
 	)
 }
