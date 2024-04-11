@@ -1,3 +1,4 @@
+import './bodyMap.css'
 import Map from './map'
 const BodyMap = () => {
 	return (

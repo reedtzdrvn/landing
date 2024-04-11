@@ -1,0 +1,16 @@
+@media screen and (max-width: 600px) {
+	.titleInfo {
+		@apply text-3xl;
+	}
+	.textInfo {
+		@apply text-xl;
+	}
+}
+@media screen and (max-width: 400px) {
+	.titleInfo {
+		@apply text-2xl;
+	}
+	.textInfo {
+		@apply text-lg;
+	}
+}
