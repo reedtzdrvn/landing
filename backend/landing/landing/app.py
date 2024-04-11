@@ -7,13 +7,13 @@ from flask_cors import CORS
 import requests
 import time
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='./lol/')
 CORS(app) 
 random_forest_model = None
 feature_names = None
 
 def send_request_to_server():
-    url = 'https://tg-wtf.onrender.com'
+    url = 'https://landing-4c1c.onrender.com'
     try:
         response = requests.get(url)
         print(f"Status code: {response.status_code}")
